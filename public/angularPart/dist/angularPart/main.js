@@ -573,7 +573,7 @@ module.exports = ".use{\r\n  position: fixed;\r\n  background-color: #343a40!imp
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"use navbar navbar-toggleable-md navbar-dark rounded\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a href=\"#\" routerLink=\"/\" class=\"logo-brand\">\n    <h3>Wish List</h3>\n   </a>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n\n    <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n            <div class=\"dropdown\" [hidden]=\"!exp_customer\">\n                <button class=\"dropbtn\">Profile</button>\n                <div class=\"dropdown-content\">\n                  <br>\n                  <button class=\"btn btn-success btn-block btn-sm\" href=\"#\" routerLink=\"/home\">Dashboard</button>\n                  <button class=\"btn btn-warning btn-block btn-sm\" href=\"#\" routerLink=\"/wishList\">Wish List</button>\n                  <button class=\"btn btn-info btn-block btn-sm\" href=\"#\" routerLink=\"/changePassword\">Change Password</button>\n                  <button class=\"btn btn-danger btn-block btn-sm\" (click)=\"logout()\">Logout</button>\n                  <br>\n                </div>\n              </div>\n        </li>   \n    </ul>\n \n  </div>\n</nav>\n<br><br><br>"
+module.exports = "<nav class=\"use navbar navbar-toggleable-md navbar-light rounded\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarsExampleDefault\" aria-controls=\"navbarsExampleDefault\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a href=\"#\" routerLink=\"/\" class=\"logo-brand\">\n    <h3>Wish List</h3>\n   </a>\n\n  <div class=\"collapse navbar-collapse\" id=\"navbarsExampleDefault\">\n\n    <ul class=\"navbar-nav ml-auto\">\n        <li class=\"nav-item\">\n            <div class=\"dropdown\" [hidden]=\"!exp_customer\">\n                <button class=\"dropbtn\">Profile</button>\n                <div class=\"dropdown-content\">\n                  <br>\n                  <button class=\"btn btn-success btn-block btn-sm\" href=\"#\" routerLink=\"/home\">Dashboard</button>\n                  <button class=\"btn btn-warning btn-block btn-sm\" href=\"#\" routerLink=\"/wishList\">Wish List</button>\n                  <button class=\"btn btn-info btn-block btn-sm\" href=\"#\" routerLink=\"/changePassword\">Change Password</button>\n                  <button class=\"btn btn-danger btn-block btn-sm\" (click)=\"logout()\">Logout</button>\n                  <br>\n                </div>\n              </div>\n        </li>   \n    </ul>\n \n  </div>\n</nav>\n<br><br><br>"
 
 /***/ }),
 
@@ -658,7 +658,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<app-navbar></app-navbar>\n<h1 class=\"text-center\">Page Not Found</h1>"
+module.exports = "<app-navbar></app-navbar>\n<br><br>\n<h1 class=\"text-center\">Page Not Found</h1>"
 
 /***/ }),
 

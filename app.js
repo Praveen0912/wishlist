@@ -23,7 +23,7 @@ app.use(methodOverride());
 
 // [SH] Use the API routes when path starts with /api
 app.use('/api', users);
-app.use('/', routes);
+app.use('*', routes);
 
 app.listen(port);
 console.log("Running on port 8080");

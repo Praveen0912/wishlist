@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<br>
+<div class="well">
+    <div class="col-md-11 col-md-offset-3" style="margin: auto">
+        <div class="card card-login mx-auto mt-5">
+            <div class="card-header text-center text-white" style="background-color: #343a40!important;">
+                <span class="fa fa-2x fa-money"></span> 
+              <h4>Item List</h4>
+            </div>
+            <div class="card-body">
+              <div class="table-responsive text-center">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                    <tr>
+                      
+                      <th class="text-center">Product Name</th>
+                      <th class="text-center">Product Price(in Rs)</th>
+                      <th class="text-center">Actions</th>
+                    </tr>
+                  </thead>
+                  <tfoot>
+                    <tr>
+                      <th class="text-center">Product Name</th>
+                      <th class="text-center">Product Price(in Rs)</th>
+                      <th class="text-center">Actions</th>
+                    </tr>
+                  </tfoot>
+                  
+                  <tbody>
+                    <tr *ngFor="let item of items">
+                      <td class="text-primary">{{ item.name }}</td>
+                      <td class="text-primary">{{ item.price }}</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <button class="btn btn-success btn-block" (click)="onClickBuy()">Buy</button>
+                          </div>
+                          <div class="col-md-6">
+                            <button class="btn btn-info btn-block" (click)="onAddWishList(item)">Add to wishlist</button>
+                          </div>
+                        </div>                                            
+                     </td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+        </div>
+
+</div>
+</div>
+
+</div>
+

@@ -9,14 +9,16 @@ import { HomeComponent } from './components/home/home.component';
 import { WishListComponent } from './components/wish-list/wish-list.component';
 import { ChangePasswordComponent } from './components/change-password/change-password.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { AuthGuardGuard } from './auth-guard.guard'
+import { AuthGuardGuard } from './auth-guard.guard';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component'
 
 const appRoutes: Routes = [
   {path:'',component:LoginComponent},
   {path:'login',component:LoginComponent},
   {path:'home',component:HomeComponent, canActivate: [AuthGuardGuard]},
   {path:'wishList',component:WishListComponent, canActivate: [AuthGuardGuard]},
-  {path:'changePassword',component:ChangePasswordComponent, canActivate: [AuthGuardGuard]}
+  {path:'changePassword',component:ChangePasswordComponent, canActivate: [AuthGuardGuard]},
+  {path:'**',component:PagenotfoundComponent}
  ];
 
 @NgModule({
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     HomeComponent,
     WishListComponent,
     ChangePasswordComponent,
-    NavbarComponent
+    NavbarComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

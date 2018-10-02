@@ -14,7 +14,7 @@ const users = require('./app/routes/users');
 
 mongoose.connect(database.url);                                //connect to mongoose 
 app.use(cors());                                               //adding middleware  -cors
-app.use(express.static(path.join(__dirname, 'public/employee/dist/employee')));      //static files location 
+app.use(express.static(path.join(__dirname, 'public/angularPart/dist/angularPart')));      //static files location 
 app.use(morgan('dev'));                                        //log every requestto the console
 app.use(bodyParser.urlencoded({ extended:false}));             //parse application/x-www-form-urlencoded
 app.use(bodyParser.json());                                    //parse application/json
